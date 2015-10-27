@@ -6,7 +6,6 @@ android:
 before_install:
   # download the latest android sdk and unzip
   - chmod +x gradlew
-  - ./gradlew clean
 script:
   - ./gradlew testobjectUpload --stacktrace
 notifications:
