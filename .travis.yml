@@ -4,6 +4,7 @@ jdk:
 before_install:
   # download the latest android sdk and unzip
   - chmod +x gradlew
+  - ./gradlew clean
   - wget http://dl.google.com/android/android-sdk_r23-linux.tgz
   - tar -zxf android-sdk_r23-linux.tgz
   - export ANDROID_HOME=`pwd`/android-sdk-linux
