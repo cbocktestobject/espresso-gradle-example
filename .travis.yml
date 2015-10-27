@@ -4,9 +4,9 @@ android:
     - build-tools-23.0.1
     - android-21
 before_install:
-  # download the latest android sdk and unzip
   - chmod +x gradlew
 script:
+  - ./gradlew
   - ./gradlew testobjectUpload --stacktrace
 notifications:
   slack:
