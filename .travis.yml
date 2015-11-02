@@ -8,7 +8,7 @@ android:
 before_install:
   - chmod +x gradlew
 script:
-  - ./gradlew testobjectUpload --stacktrace
+  - travis_wait ./gradlew testobjectUpload --stacktrace
 notifications:
   email: false
   
